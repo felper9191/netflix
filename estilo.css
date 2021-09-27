@@ -1,0 +1,101 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .logo h1{
+    color: var(--vermelho);
+    font-family: Arial, Courier, sans-serif;
+    margin: 10px;
+}
+
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    font-family: Arial, Courier, sans-serif;
+    margin-right: 10px;
+}
+
+.area-filme{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('img/kimdom.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Courier, sans-serif;
+    padding-left: 10px; 
+}
+
+.titulo{
+    font-size: 44px;
+    font-family: Arial, Courier, sans-serif;
+    margin-bottom: 5px;
+}
+
+.descricao{
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.container{
+    padding-top: 10%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+    border: solid 1px rgba(0,0,0,.50);
+}
+
+.botao:hover{
+    border: solid 1px white;
+}
+
+.series-relacionadas{
+    color: white;
+    font-family: Arial, Courier, sans-serif;
+    padding: 20px 0 0 10px; 
+}
+
+.series img{
+    justify-content: center;
+    margin-top: 10px;
+    width: 440px;
+    height: 230px;
+}
+
+@media screen and (max-width: 700px){
+    header{
+    padding-left: 0;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .area-filme{
+    width: 200%;
+    height: auto;
+}  
+}
